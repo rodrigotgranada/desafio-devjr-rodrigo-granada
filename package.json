@@ -1,0 +1,35 @@
+{
+    "name": "todo-app",
+    "version": "1.0.0",
+    "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\" alt=\"Laravel Logo\"></a></p>",
+    "main": "index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "dev": "concurrently \"npm run dev:laravel\" \"npm run dev:vite\"",
+        "dev:laravel": "php artisan serve",
+        "dev:vite": "vite --open http://localhost:8000",
+        "migrate": "php artisan migrate",
+        "migrate:fresh": "php artisan migrate:fresh",
+        "seed": "php artisan db:seed",
+        "migrate-seed": "php artisan migrate:fresh --seed",
+        "test": "php artisan test",
+        "start": "concurrently \"npm run dev:laravel\" \"npm run dev:vite\""
+    },
+    "keywords": [],
+    "author": "Rodrigo Granada",
+    "license": "ISC",
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.2",
+        "autoprefixer": "^10.4.21",
+        "concurrently": "^9.1.2",
+        "laravel-vite-plugin": "^1.2.0",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^3.4.17",
+        "vite": "^6.3.5"
+    },
+    "dependencies": {
+        "alpinejs": "^3.14.9"
+    }
+}
